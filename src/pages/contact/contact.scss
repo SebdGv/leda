@@ -1,0 +1,42 @@
+@use "../../index.scss" as *;
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1vh;
+}
+
+.formTitle {
+  margin: 40px;
+  text-align: center;
+  font-weight: 300;
+}
+
+input,
+textarea {
+  background: $color1;
+  border: 1px solid $black;
+  border-radius: 5px;
+
+  width: 150px;
+  height: 30px;
+
+  margin: 10px;
+}
+textarea {
+  height: 70px;
+}
+
+::placeholder {
+  color: black;
+}
+
+.sendBtn {
+  background: $black;
+  color: $color2;
+
+  padding: 10px;
+  border-radius: 5px;
+}
