@@ -15,7 +15,7 @@
 .err404 {
   font-size: 96px;
   font-weight: 500;
-  color: $color1;
+  color: $black;
   margin: 0;
 }
 
@@ -28,6 +28,7 @@
 .backHome {
   text-decoration: underline;
   font-size: 14px;
+  font-weight: 200;
 }
 
 @media screen and (min-width: 600px) {

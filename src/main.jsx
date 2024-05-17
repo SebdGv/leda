@@ -14,7 +14,7 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: "/leda",
+        path: "/leda/",
         element: <Home />,
       },
       {
@@ -22,7 +22,7 @@ const router = createBrowserRouter([
         element: <Contact />,
       },
       {
-        path: "*",
+        path: "/*",
         element: <Error />,
       },
     ],

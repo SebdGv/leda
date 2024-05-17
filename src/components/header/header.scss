@@ -16,26 +16,27 @@
 nav ul {
   position: absolute;
   display: flex;
-
   flex-direction: column;
   justify-content: center;
   align-items: center;
   top: 0;
   left: 0;
-  width: 35vw;
-  height: 70vh;
-  backdrop-filter: blur(5px);
+
+  width: 100vw;
+  height: 100vh;
+
+  backdrop-filter: blur(10px);
   z-index: 10;
   transition: 0.9s cubic-bezier(0, 0.77, 0.38, 1.06);
 
   & li {
     padding: 4vh;
     font-size: 24px;
-    font-weight: 300;
+    font-weight: 500;
     &:after {
       display: block;
       content: "";
-      border-bottom: solid 1px $black;
+      border-bottom: solid 2px $black;
       transform: scaleX(0);
       transition: transform 250ms ease-in-out;
     }
@@ -48,6 +49,10 @@ nav ul {
   transform: translateY(-120vh);
 }
 
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
 .burger {
   z-index: 11;
   padding: 0 26px;
@@ -71,4 +76,10 @@ nav ul {
   background: $color1;
   padding: 15px;
   border-radius: 300px;
+}
+
+@media screen and (min-width: 1024px) {
+  nav ul li {
+    font-size: 58px;
+  }
 }

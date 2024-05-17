@@ -8,7 +8,7 @@ export default function Error() {
       <div className="notFound">
         <p className="err404">404</p>
         <p className="errText">Oups! La page que vous demandez n'existe pas.</p>
-        <Link to="/" className="backHome">
+        <Link to="/leda/" className="backHome">
           Retourner sur la page d’accueil
         </Link>
       </div>

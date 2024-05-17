@@ -19,7 +19,7 @@ export default function ImageSlider() {
       <SwiperSlide>
         <img
           className="imageSlider"
-          src={`${import.meta.env.BASE_URL}src/assets/echiquier.jpg`}
+          src={`${import.meta.env.BASE_URL}src/assets/axelMenuisier.webp`}
           alt="Image 1"
         />
       </SwiperSlide>

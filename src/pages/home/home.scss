@@ -49,14 +49,15 @@
 }
 
 .title {
-  font-size: 36px;
+  font-size: 14px;
   font-weight: 300;
-  letter-spacing: 7px;
+  letter-spacing: 5px;
   color: $black;
 }
 .tagLine {
   color: $color3;
-  font-weight: 500;
+  font-size: 12px;
+  font-weight: 400;
   margin: 20px 0;
 }
 .btnCTA {
@@ -65,15 +66,12 @@
   font-size: 14px;
   font-weight: 100;
   transition: 0.15s ease;
-  background: linear-gradient(
-    164deg,
-    #f9f7f9 0%,
-    #fffff0 59%,
-    #f9f7f9 99%,
-    #ffffff 100%
-  );
+  background: $black;
   &:hover {
     transform: scale(1.05);
+  }
+  & a {
+    color: white;
   }
 }
 
@@ -100,7 +98,7 @@
     margin: 20px;
   }
   .title {
-    font-size: 46px;
+    font-size: 26px;
   }
 }
 @media screen and (min-width: 1024px) {

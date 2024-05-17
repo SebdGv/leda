@@ -10,10 +10,14 @@ export default function Header() {
   const toggleMenu = () => {
     setOpenMenu(!isOpenMenu);
   };
+  const closeMenu = () => {
+    setOpenMenu(false); // Ferme le menu
+  };
+
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (navRef.current && !navRef.current.contains(event.target)) {
-        setOpenMenu(false); // Ferme le menu si le clic est en dehors du nav
+        closeMenu(); // Ferme le menu si le clic est en dehors du nav
       }
     };
 
@@ -25,24 +29,32 @@ export default function Header() {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
+  useEffect(() => {
+    if (isOpenMenu) {
+      document.body.classList.add("no-scroll"); // Ajoute la classe pour empêcher le défilement
+    } else {
+      document.body.classList.remove("no-scroll"); // Supprime la classe pour réactiver le défilement
+    }
+  }, [isOpenMenu]);
+
   return (
     <>
       <header>
         <div className="header">
           <nav className="navBar" ref={navRef}>
             <div className="navContainer">
-              <ul className={isOpenMenu ? "" : "hidden"}>
+              <ul className={isOpenMenu ? "" : "hidden"} onClick={closeMenu}>
                 <li>
-                  <Link to={"/leda"}>Accueil</Link>
+                  <Link to={"/leda/"}>Accueil</Link>
                 </li>
                 <li>
-                  <Link to={"/leda"}>Shop</Link>
+                  <Link to={"/leda/"}>Shop</Link>
                 </li>
                 <li>
                   <Link to={"/contact"}>Contact</Link>
                 </li>
                 <li>
-                  <Link to={"/leda"}>A propos</Link>
+                  <Link to={"/leda/"}>A propos</Link>
                 </li>
               </ul>
               <div className="burger" onClick={toggleMenu}>
@@ -52,7 +64,11 @@ export default function Header() {
             <div className="logoContainer">
               <div className="logo">
                 <Link to={"/leda"}>
-                  <img src="./src/assets/logo.png" alt="" className="logo" />
+                  <img
+                    src={`${import.meta.env.BASE_URL}src/assets/logo.png`}
+                    alt=""
+                    className="logo"
+                  />
                 </Link>
               </div>
             </div>
