@@ -68,7 +68,7 @@ export default function Header() {
               <div className="logo">
                 <Link to={"/leda"}>
                   <img
-                    src={`${import.meta.env.BASE_URL}src/assets/logo.png`}
+                    src={`${import.meta.env.BASE_URL}assets/logo.png`}
                     alt=""
                     className="logo"
                   />

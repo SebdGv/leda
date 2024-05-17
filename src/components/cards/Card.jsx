@@ -7,7 +7,7 @@ export default function Card() {
       <div className="card">
         <Link to={`/boutique/id`}>
           <img
-            src={`${import.meta.env.BASE_URL}/src/assets/horlogeVerte.jpg`}
+            src={`${import.meta.env.BASE_URL}assets/horlogeVerte.jpg`}
             alt="photographie du produit"
           />
           <div className="cardContent">

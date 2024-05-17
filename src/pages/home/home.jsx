@@ -15,7 +15,7 @@ export default function Home() {
               <h1 className="title">L&apos;Etable d&apos;Axel</h1>
               <p className="tagLine ">Where Nature Meets Art</p>
               <button className="btnCTA">
-                <Link to={"/boutique"}>Shop now</Link>
+                <Link to={"/leda/boutique"}>Shop now</Link>
               </button>
             </div>
           </div>
