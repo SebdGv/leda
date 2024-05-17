@@ -1,7 +1,8 @@
 import "swiper/css";
+import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Autoplay, EffectCube, Navigation, Pagination } from "swiper/modules"; // Importation correcte des modules
+import { Autoplay, EffectFade, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "./imageSlider.scss";
 
@@ -14,7 +15,9 @@ export default function ImageSlider() {
       pagination={{ clickable: true }}
       navigation={true} // Utilisation correcte du module de navigation
       autoplay={{ delay: 6000 }}
-      modules={[Navigation, Pagination, Autoplay, EffectCube]} // Inclusion des modules nécessaires
+      effect={"fade"}
+      speed={1200}
+      modules={[Navigation, Pagination, Autoplay, EffectFade]} // Inclusion des modules nécessaires
     >
       <SwiperSlide>
         <img

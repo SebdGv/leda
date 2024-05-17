@@ -14,15 +14,15 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: "/leda/",
+        path: "/leda",
         element: <Home />,
       },
       {
-        path: "/contact",
+        path: "/leda/contact",
         element: <Contact />,
       },
       {
-        path: "/*",
+        path: "/leda/*",
         element: <Error />,
       },
     ],

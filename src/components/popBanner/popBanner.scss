@@ -2,13 +2,7 @@
 
 .popBanner {
   z-index: 10000;
-  background: linear-gradient(
-    164deg,
-    #f9f7f944 0%,
-    #fdffde58 59%,
-    #f9f7f953 99%,
-    #ffffff3a 100%
-  );
+  background: $color2;
   border-bottom: 1px solid rgb(197, 197, 197);
   height: 50px;
   display: flex;
@@ -20,9 +14,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
   font-size: 10px;
-  font-weight: 300;
 }
 span.bannerContent {
   color: $color3;

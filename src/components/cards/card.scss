@@ -2,13 +2,7 @@
 
 .card {
   position: relative;
-  background: linear-gradient(
-    45deg,
-    #f9f7f944 0%,
-    #fdffde58 59%,
-    #f9f7f953 99%,
-    #ffffff3a 100%
-  );
+  background: $color2;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   padding: 5px;
   max-height: 230px;
@@ -28,8 +22,8 @@
 .cardContent {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   padding-left: 12px;
   height: 64.25px;
-  font-weight: 300;
+  font-size: 12px;
 }

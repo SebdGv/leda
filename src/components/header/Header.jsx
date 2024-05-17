@@ -51,10 +51,13 @@ export default function Header() {
                   <Link to={"/leda/"}>Shop</Link>
                 </li>
                 <li>
-                  <Link to={"/contact"}>Contact</Link>
+                  <Link to={"/leda/contact"}>Contact</Link>
                 </li>
                 <li>
                   <Link to={"/leda/"}>A propos</Link>
+                </li>
+                <li>
+                  <Link to={"/leda/login/"}>LogIn</Link>
                 </li>
               </ul>
               <div className="burger" onClick={toggleMenu}>

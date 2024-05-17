@@ -3,10 +3,10 @@
    License: none (public domain)
 */
 
-$color1: #fdffde6f;
-$color2: #f4fafb;
-$color3: #f47373a8;
-$white: #333;
+$color1: #f6f4e8;
+$color2: #bacec1;
+$color3: #e59560;
+$white: #fff;
 $black: #333;
 
 html,
@@ -96,7 +96,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  color: $white;
+  color: $black;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -119,15 +119,11 @@ html {
 body {
   line-height: 1;
   box-sizing: border-box;
-  background: linear-gradient(
-    45deg,
-    #f9f7f944 0%,
-    #fdffde58 59%,
-    #f9f7f953 99%,
-    #ffffff3a 100%
-  );
+  background: $color1;
   font-family: "poppins";
-  font-weight: 200;
+  font-weight: 400;
+  max-width: 1440px;
+  margin: auto;
 }
 ol,
 ul,

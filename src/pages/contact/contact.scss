@@ -11,13 +11,19 @@
 .formTitle {
   margin: 40px;
   text-align: center;
-  font-weight: 300;
+}
+.formContainer {
+  margin: auto;
+  padding: 20px;
+  background: $color2;
+  width: 30vw;
+  border-radius: 25px;
 }
 
 input,
 textarea {
   background: $color1;
-  border: 1px solid $black;
+  border: none;
   border-radius: 5px;
 
   width: 150px;
@@ -35,8 +41,8 @@ textarea {
 
 .sendBtn {
   background: $black;
-  color: $color2;
-
+  color: $color1;
+  margin-top: 5px;
   padding: 10px;
   border-radius: 5px;
 }
