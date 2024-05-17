@@ -1,0 +1,24 @@
+@use "../../index.scss" as *;
+
+.swiper-horizontal {
+  width: 70%;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  display: none;
+}
+
+.swiper-pagination-bullet-active {
+  background: #fff;
+}
+.slider-container {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+.imageSlider {
+  width: 100%;
+  max-height: 50vh;
+  object-fit: cover;
+  filter: saturate(40%);
+}

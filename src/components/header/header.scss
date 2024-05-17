@@ -1,0 +1,74 @@
+@use "../../index.scss" as *;
+
+.navBar {
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  padding: 5px 20px;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+nav ul {
+  position: absolute;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 35vw;
+  height: 70vh;
+  backdrop-filter: blur(5px);
+  z-index: 10;
+  transition: 0.9s cubic-bezier(0, 0.77, 0.38, 1.06);
+
+  & li {
+    padding: 4vh;
+    font-size: 24px;
+    font-weight: 300;
+    &:after {
+      display: block;
+      content: "";
+      border-bottom: solid 1px $black;
+      transform: scaleX(0);
+      transition: transform 250ms ease-in-out;
+    }
+    &:hover:after {
+      transform: scaleX(1);
+    }
+  }
+}
+.hidden {
+  transform: translateY(-120vh);
+}
+
+.burger {
+  z-index: 11;
+  padding: 0 26px;
+  cursor: pointer;
+}
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  height: 50px;
+}
+.faBars {
+  font-size: 24px;
+  font-weight: 100;
+}
+
+.faCartShopping {
+  color: $white;
+  background: $color1;
+  padding: 15px;
+  border-radius: 300px;
+}

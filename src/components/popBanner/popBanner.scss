@@ -1,0 +1,30 @@
+@use "../../index.scss" as *;
+
+.popBanner {
+  z-index: 10000;
+  background: linear-gradient(
+    164deg,
+    #f9f7f944 0%,
+    #fdffde58 59%,
+    #f9f7f953 99%,
+    #ffffff3a 100%
+  );
+  border-bottom: 1px solid rgb(197, 197, 197);
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bannerContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 10px;
+  font-weight: 300;
+}
+span.bannerContent {
+  color: $color3;
+  font-size: 12px;
+}
