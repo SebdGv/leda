@@ -19,21 +19,21 @@ export default function ImageSlider() {
       <SwiperSlide>
         <img
           className="imageSlider"
-          src="\src\assets\echiquier.jpg"
+          src={`${import.meta.env.BASE_URL}src/assets/echiquier.jpg`}
           alt="Image 1"
         />
       </SwiperSlide>
       <SwiperSlide>
         <img
           className="imageSlider"
-          src="\src\assets\horlogeVerte.jpg"
+          src={`${import.meta.env.BASE_URL}/src/assets/horlogeVerte.jpg`}
           alt="Image 2"
         />
       </SwiperSlide>
       <SwiperSlide>
         <img
           className="imageSlider"
-          src="\src\assets\echiquier.jpg"
+          src={`${import.meta.env.BASE_URL}src/assets/echiquier.jpg`}
           alt="Image 3"
         />
       </SwiperSlide>

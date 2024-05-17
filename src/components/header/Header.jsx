@@ -33,16 +33,16 @@ export default function Header() {
             <div className="navContainer">
               <ul className={isOpenMenu ? "" : "hidden"}>
                 <li>
-                  <Link to={"/"}>Accueil</Link>
+                  <Link to={"/leda"}>Accueil</Link>
                 </li>
                 <li>
-                  <Link to={"/"}>Shop</Link>
+                  <Link to={"/leda"}>Shop</Link>
                 </li>
                 <li>
                   <Link to={"/contact"}>Contact</Link>
                 </li>
                 <li>
-                  <Link to={"/"}>A propos</Link>
+                  <Link to={"/leda"}>A propos</Link>
                 </li>
               </ul>
               <div className="burger" onClick={toggleMenu}>
@@ -51,7 +51,7 @@ export default function Header() {
             </div>
             <div className="logoContainer">
               <div className="logo">
-                <Link to={"/"}>
+                <Link to={"/leda"}>
                   <img src="./src/assets/logo.png" alt="" className="logo" />
                 </Link>
               </div>
