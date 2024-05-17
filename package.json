@@ -1,6 +1,7 @@
 {
   "name": "leda",
   "private": true,
+  "homepage": "https://votre_nom_utilisateur.github.io/votre_repository",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
